@@ -16,3 +16,9 @@ header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
 }
+
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
