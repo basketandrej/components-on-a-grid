@@ -12,9 +12,18 @@ img {
   width: 100%;
 }
 
+.logo {
+  background-color: black;
+}
+
+header .banner {
+  display: grid;
+}
+
 header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
-  display: contents;
+  /*display: contents;*/
+  /*display: grid;*/
 }
 
 
