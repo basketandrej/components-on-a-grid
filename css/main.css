@@ -1,7 +1,9 @@
 html {
   box-sizing: border-box;
-  font-family: "Patua One", sans-serif;
+  font-family: Georgia, serif;
   background-color: #f2f1ed;
+  line-height: 1.5;
+  display: flex;
 }
 
 *,
@@ -18,20 +20,21 @@ body {
   margin: 0;
   padding: 1rem;
   display: grid;
-  grid-template-columns: 1fr 1fr; /* How many columns does this page need? */
+  grid-template-columns: 1fr 1fr;
   grid-template-areas:
    "header header"
-   ". ."; /* We want to define our grid areas. Keep in mind there are two rows and the top row spans the entire page while the second row is divided evenly with two figure elements. */
-  gap: 1rem;
+   ". .";
+  grid-gap: 1rem;
 
 }
 
 h2 {
+  font-family: "Patua One", sans-serif;
   color: #30658d;
 }
 
 p {
-  font-family: "Georgia";
+  font-family: Georgia, serif;
 }
 
 .banner {
@@ -49,20 +52,10 @@ ul > li > a {
 }
 
 header {
-  /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
-  /*display: contents;*/
-  /*display: grid;*/
-  /*
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(3, 1fr)/*1fr 1fr 1fr;*/
   display: contents;
-  /*grid-area: header;*/
-
 }
 
 header > img {
-  /*grid-column: 1 / -1;
-  grid-row: 1 / -1;*/
   grid-area: header;
 }
 
@@ -76,12 +69,10 @@ nav {
 main {
   display: contents;
   grid-template-columns: 1fr 1fr;
-  /*column-gap: 1%;*/
 }
 
 figure {
   margin: 0;
-  /*padding-top: 2%;*/
 }
 
 .logo {
@@ -91,12 +82,4 @@ figure {
   align-self: end;
   width: 14rem;
   height: auto;
-  /*background-color: black;*/
-  /*grid-area: header;*/
-
-}
-
-.pano {
-
-
 }
