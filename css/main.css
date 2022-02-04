@@ -22,10 +22,9 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-   "header header"
-   ". .";
+    "header header"
+    ". .";
   grid-gap: 1rem;
-
 }
 
 h2 {
@@ -35,10 +34,6 @@ h2 {
 
 p {
   font-family: Georgia, serif;
-}
-
-.banner {
-
 }
 
 ul > li {
@@ -58,8 +53,6 @@ header {
 header > img {
   grid-area: header;
 }
-
-
 
 nav {
   grid-column: 2 / 3;
